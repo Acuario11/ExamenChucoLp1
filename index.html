@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+        <div>
+            <div id="d1">
+                <image src="../pictures/logoexa.png">
+                </div>
+            <div id="d2">
+                <h1>Sistemas de Ventas - Exa01</h1> 
+                <hr color="blue">
+            </div>
+        </div>
+        
+        <nav>
+            <input type="submit" value="Inicio" class="input" onclick="inicio()">
+            <input type="submit" value="Ventas" class="input" onclick="ventas()">
+            <input type="submit" value="Clientes" class="input" onclick="clientes()">
+            <input type="submit" value="Productos" class="input" onclick="productos()">   
+        </nav>
+        <main>
+            <aside id="inicio">
+                <b><label id="texto">Bienvenidos al Sistema de Ventas</label></b>
+            </aside>
+
+
+            <aside id=ventas>
+                
+                <input class="textotil" type="text" disabled value="Venta" ><br>
+
+                <label>Cliente:</label><br>
+                <input type="text" id="cliente" disabled><button  id="boton" >Buscar</button><br> 
+                <label >Impuesto</label><br>
+                <input type="text" id="importe" disabled><button  id="bimport" >%</button><br>
+
+                <input type="submit" value="Buscar Articulos" id="buscararticuluos"><br>
+
+                <table id="tabla"  style="margin: auto">
+                    <thead>
+                        <tr>    
+                            <th>Articulo</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Elimnar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <label id="total">Total</label>
+                <input type="text" >
+
+
+            </aside>
+
+            <aside id="clientes">
+                    <input type="text" disabled value="Cliente" class="textotil"><br>
+
+
+                    <table id="tablaclientes"  style="margin: auto">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+            </div>
+            <div id="productos">
+                    <input type="text" disabled value="Productos"><br>
+                    <table id="tablaproductos" style="margin: auto" >
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                    <th>Cantidad</th>
+                                    <th>Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="text" id="cantidad"></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                                <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><input type="text" id="cantidad"></td>
+                                        <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="text" id="cantidad"></td>
+                                    <td><input type="button" id="add" value="add"></td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+
+
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>
