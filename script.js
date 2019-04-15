@@ -22,3 +22,8 @@ function productos(){
     document.getElementById("clientes").style.display= "none";
     document.getElementById("productos").style.display= "block";
 }
+
+function buscar(){
+    document.getElementById("tablita").style.display="block";
+    document.getElementById("ventas").style.display="none";
+}
