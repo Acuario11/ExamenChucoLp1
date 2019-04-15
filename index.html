@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practica</title>
+    <title>LP1-Exa</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -30,45 +30,49 @@
             </aside>
 
 
-            <aside id=ventas>
+            <aside id="ventas">
+                <br>
+                <b><label id="tituloaside">Ventas</label> </b>
+                <hr color="blue">
+
+                <label id="client">Cliente:</label> 
+                <input type="text" id="cliente" disabled placeholder="Ingresar Clientes"> 
+                <input type="submit" value="Buscar" id="botoncito" onclick="buscar()">
+                <br>
+                <input type="button"  id="busproducto" value=" Buscar Producto" >
+                <label id="cant">Ingrese Cantidad:</label>
+                <input type="number" id="cantidad">
+                <input type="submit" id="envia" value="Enviar">
                 
-                <input class="textotil" type="text" disabled value="Venta" ><br>
-
-                <label>Cliente:</label><br>
-                <input type="text" id="cliente" disabled><button  id="boton" >Buscar</button><br> 
-                <label >Impuesto</label><br>
-                <input type="text" id="importe" disabled><button  id="bimport" >%</button><br>
-
-                <input type="submit" value="Buscar Articulos" id="buscararticuluos"><br>
-
-                <table id="tabla"  style="margin: auto">
+                <table id="tabla">
                     <thead>
                         <tr>    
-                            <th>Articulo</th>
+                            <th>Producto</th>
                             <th>Precio</th>
                             <th>Cantidad</th>
-                            <th>Subtotal</th>
-                            <th>Elimnar</th>
+                            <th>Sub Total</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody>
 
                     </tbody>
                 </table>
-                <label id="total">Total</label>
-                <input type="text" >
-
-
+                <br>
+                <label id="total1">Total:</label>
+                <input type="text" id="total">
             </aside>
 
             <aside id="clientes">
-                    <input type="text" disabled value="Cliente" class="textotil"><br>
+                    <br>
+                    <label id="tituloaside">Clientes</label> 
+                    <hr color="blue">
 
-
-                    <table id="tablaclientes"  style="margin: auto">
+                    <div id="tablita">
+                    <table id="tableclientes">
                         <thead>
                             <tr>
-                                <th>#</th>
+                                <th>Item</th>
                                 <th>Nombre</th>
                                 <th>Apellidos</th>
                                 <th>Accion</th>
@@ -76,76 +80,70 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="button" id="add" value="add"></td>
+                                <td>1</td>
+                                <td>Madai</td>
+                                <td>Chuco Vivas</td>
+                                <td><input type="button" id="add" value="Add"></td>
                             </tr>
                             <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><input type="button" id="add" value="add"></td>
+                                    <td>2</td>
+                                    <td>Karla</td>
+                                    <td>Salas Pinedo</td>
+                                    <td><input type="button" id="add" value="Add"></td>
                             </tr>
                             <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><input type="button" id="add" value="add"></td>
+                                    <td>3</td>
+                                    <td>Jared</td>
+                                    <td>Lazo Cueva</td>
+                                    <td><input type="button" id="add" value="Add"></td>
                             </tr>
                         </tbody>
-
                     </table>
-            </div>
-            <div id="productos">
-                    <input type="text" disabled value="Productos"><br>
-                    <table id="tablaproductos" style="margin: auto" >
+                    </div>
+                </aside>
+
+            <aside id="productos">
+                    <br>
+                    <b><label id="tituloaside">Productos</label> </b>
+                    <hr color="blue">
+                    
+                    <table id="tablaproductos" >
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>Item</th>
                                     <th>Producto</th>
                                     <th>Precio</th>
                                     <th>Stock</th>
-                                    <th>Cantidad</th>
                                     <th>Accion</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><input type="text" id="cantidad"></td>
-                                    <td><input type="button" id="add" value="add"></td>
+                                    <td>1</td>
+                                    <td>Laptop</td>
+                                    <td>3000</td>
+                                    <td>10</td>
+                                    <td><input type="submit" id="add" value="Add"></td>
                                 </tr>
                                 <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><input type="text" id="cantidad"></td>
-                                        <td><input type="button" id="add" value="add"></td>
+                                    <td>2</td>
+                                    <td>Parlantes</td>
+                                    <td>500</td>
+                                    <td>4</td>
+                                    <td><input type="submit" id="add" value="Add"></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><input type="text" id="cantidad"></td>
-                                    <td><input type="button" id="add" value="add"></td>
+                                    <td>3</td>
+                                    <td>Play Sation</td>
+                                    <td>2000</td>
+                                    <td>7</td>
+                                    <td><input type="submit" id="add" value="Add"></td>
                                 </tr>
                             </tbody>
-    
                         </table>
-
-
-
-            </div>
+                    </aside>
         </main>
-
     </div>
-
     <script src="../Js/script.js"></script>
 </body>
 </html>
